@@ -1,6 +1,6 @@
 # Este script unicamente extrae todos los segmentos que publica un ASN
 # y escanea un puerto especifico
-#
+# requiere los paquetes "whois" y "masscan" así como permisos de root
 
 echo "Sintaxis: "
 echo " scan.sh ASN Puerto"
