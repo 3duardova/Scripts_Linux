@@ -14,6 +14,6 @@ echo "Espere ..."
 
 Segmentos=$(whois -h whois.cymru.com "dump AS$1" | grep -Eo  "([0-9]*\.){3}[0-9]*/[0-9]+" | sort -nu )
 
-for i in $Segmentos; do masscan -p$2 $i | tee ASN$1.txt ; done
+for i in $Segmentos; do masscan -p$2 $i | tee ASN$1_$2.txt ; done
 
 echo "Finalizado."
